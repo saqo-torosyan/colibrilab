@@ -1,0 +1,309 @@
+@media (max-width: 1200px) {
+    header.front-page-header .navbar-menu {
+        flex-basis: 50%;
+        margin-left: 0;
+    }
+
+    .portfolio .portfolio-title {
+        margin-top: -75px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header.front-page-header .navbar-menu {
+        flex-basis: 65%;
+    }
+
+    .slick-slide img {
+        width: 55%;
+    }
+
+    .services-slider-item-info-title {
+        font-size: 2rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .about-us-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-us-content {
+        display: flex;
+        flex-direction: column;
+
+        &-text {
+            order: 2;
+            text-align: center;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        &-images {
+            order: 1;
+        }
+    }
+
+    .about-us-part-2-container {
+        margin: 30px auto;
+    }
+
+    .team {
+        margin-top: -6rem;
+    }
+
+    .team-member {
+        width: 202px;
+        height: 355px;
+    }
+
+    .portfolio .portfolio-title {
+        margin-top: -29px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.front-page-header {
+        .page-hero-image {
+            display: none;
+        }
+
+        .page-hero-text {
+            text-align: center;
+        }
+
+        .page-hero .container .row {
+            height: 70%;
+        }
+
+        .navbar {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            &-menu {
+                flex-direction: column;
+                flex-basis: 100%;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                background-color: rgba(darken($main-color, 50), .9);
+                padding: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 999;
+                margin: 0;
+                display: none;
+
+                .hide-menu {
+                    display: inline;
+                    color: white;
+                    position: absolute;
+                    top: 25px;
+                    right: 25px;
+                    font-size: 2rem;
+                }
+
+                li {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    ;
+
+                    a {
+                        color: white;
+                        width: 100%;
+                        display: block;
+                        padding: .2rem 0;
+
+                        &::after {
+                            display: none;
+                        }
+
+                        &:hover {
+                            color: black;
+                            background-color: rgb(223, 223, 223);
+                        }
+                    }
+                }
+
+                &-toggler {
+                    display: inline;
+                }
+            }
+        }
+
+
+    }
+
+    #services {
+        .services-slider-item-info-title {
+            margin-top: 2.5rem;
+        }
+    }
+
+    #team {
+        display: none;
+    }
+
+    .all-staff {
+        display: block !important;
+    }
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .portfolio {
+        &-title {
+            margin-top: 60px !important;
+        }
+    }
+
+    #contacts {
+        height: auto;
+        padding-top: 0;
+
+        .contact-form {
+            position: initial;
+        }
+
+        iframe {
+            height: 550px;
+            display: block;
+        }
+
+        .bg-overlay {
+            display: none;
+        }
+
+        .contact-dark-line {
+            position: initial;
+        }
+
+        .contact-form-container {
+            margin: 0;
+            padding: 0;
+            max-width: initial;
+            width: 100%;
+
+            .row {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                .col-md-5 {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        .contact-form {
+            border-radius: initial;
+            border-top: 50px solid #333333;
+            padding: 7rem;
+        }
+    }
+
+    footer {
+        padding-bottom: 0;
+
+        .container {
+            text-align: center;
+
+            .social-buttons {
+                justify-content: center;
+                margin-bottom: 0 !important;
+
+                &-item {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .footer-menu {
+                padding: 0 !important;
+            }
+
+            .row {
+                div {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .footer-main-info {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #contacts {
+        .contact-form {
+            padding: 2rem;
+        }
+    }
+
+    .services-slider {
+        text-align: center;
+
+    }
+
+    .services-slider-item-descript {
+        margin: 1rem auto;
+    }
+
+    .services-slider-item-image {
+        display: none !important;
+    }
+
+    .services {
+        margin-top: 2rem;
+        .slick-dots {
+            top: 0;
+            left: auto;
+            bottom: auto;
+            text-align: center;
+            width: 100%;
+
+
+            li button:before {
+                font-size: 1.4rem;
+                color: darken($main-color, 50);
+                opacity: .8;
+            }
+        }
+    }
+
+    .about-us {
+        &-title {
+            margin-top: 5rem;
+            h2 {
+                font-size: 3rem;
+            } 
+        }
+    }
+
+    .portfolio {
+        .paralax-text {
+            &-back {
+                font-size: 6rem !important;
+                top: -32px;
+            }
+            &-front {
+                font-size: 3rem !important;
+            }
+        }
+    }
+}
